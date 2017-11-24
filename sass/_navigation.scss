@@ -33,7 +33,7 @@ a {
 	width: 100%;
 
 	ul {
-		display: none;
+		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -98,7 +98,7 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -130,3 +130,40 @@ a {
 		width: 50%;
 	}
 }
+
+
+// Custom Menu Styles
+
+	.nav-links {
+		display: none;
+	}
+	.menu ul {
+		width: 100%;
+		margin: 0 auto;
+	
+		li {
+		display: flex;
+		}
+	}
+
+	.menu ul li:nth-of-type(1) {
+		&::after {
+			content: '|';
+			color: white;
+			margin: 0 1rem;
+		}
+	}
+
+	.menu ul li:nth-of-type(2) {
+		&::after {
+			content: '|';
+			color: white;
+			margin: 0 1rem;
+		}
+	}
+
+	.bottom {
+		color: white;
+		
+	}
+

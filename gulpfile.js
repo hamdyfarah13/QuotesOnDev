@@ -49,7 +49,7 @@ gulp.task('browser-sync', function () {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost[:port-here]/[your-dir-name-here]',
+        proxy: 'http://localhost/wordpress-4.8.3/QuotesOnDev/QuotesOnDev/',
     });
 
     gulp.watch(files).on('change', browserSync.reload);
