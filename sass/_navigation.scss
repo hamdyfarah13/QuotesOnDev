@@ -2,18 +2,75 @@
 # Navigation
 --------------------------------------------------------------*/
 
+/*  Main Navigation		*/
+
+.site-info{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4.5rem 0 3rem;
+	align-items:center;
+}
+.red-link{
+	color:#fff;
+	a{
+		text-decoration: none;
+	}
+}
+.menu{
+
+		li{
+			border-right: 1px solid #fff;
+			line-height:1;
+		}
+		li:nth-child(1){
+		padding-right:1rem;
+		}
+		li:nth-child(2){
+		padding-left:1rem;
+		padding-right:1rem;
+		}
+		li:nth-last-child(1){
+			border-right:none;
+			padding-left:1rem;
+		}
+
+}
+
+.entry-meta{
+	display:inline;
+	font-size:1.25rem;
+	h2{
+		display:inline;
+		font-size:1.25rem;
+		margin:0;
+	}
+}
+
+.author-source-container{
+	display:inline;
+	font-size:1.25rem;
+	p{
+		display: inline;
+	}
+	a{
+		padding-left:1rem;
+	}
+}
+
 /* Links */
 
+
+
 a {
-	color: $color__link;
+	color: $green;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $green;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $green;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -30,12 +87,12 @@ a {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
+	width: auto;
 
 	ul {
-		// display: none;
+		display: flex;
 		list-style: none;
-		margin: 0;
+		margin:0;
 		padding-left: 0;
 
 		ul {
@@ -98,15 +155,22 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: none;
+	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 620px) {
 	.menu-toggle {
-		display: none;
+		display: block;
 	}
 	.main-navigation ul {
 		display: block;
+	}
+	.menu{
+		li:nth-last-child(1){
+			border-right:1px solid white;
+			padding-left:1rem;
+			padding-right:1rem;
+		}
 	}
 }
 
@@ -130,40 +194,3 @@ a {
 		width: 50%;
 	}
 }
-
-
-// Custom Menu Styles
-
-	.nav-links {
-		display: none;
-	}
-	.menu ul {
-		width: 100%;
-		margin: 0 auto;
-	
-		li {
-		display: flex;
-		}
-	}
-
-	.menu ul li:nth-of-type(1) {
-		&::after {
-			content: '|';
-			color: white;
-			margin: 0 1rem;
-		}
-	}
-
-	.menu ul li:nth-of-type(2) {
-		&::after {
-			content: '|';
-			color: white;
-			margin: 0 1rem;
-		}
-	}
-
-	.bottom {
-		color: white;
-		
-	}
-

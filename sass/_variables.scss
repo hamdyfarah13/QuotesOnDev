@@ -1,19 +1,10 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-
+$width:1080px;
 // Colors
-$color__background-body: #222222;
-$color__gr: #00cc00;
 
-// Border 
-$border: 1px dashed #ffffff;
-
-
-
-
-
-// Built-in
+$color__background-body: #fff;
 $color__text-main: #404040;
 
 $color__background-screen: #f1f1f1;
@@ -27,10 +18,12 @@ $color__border-abbr: #666;
 $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
-
+$green:#0c0;
+$background:#222222;
+$text:white;
 // Typography
-
-$font__main: 'Exo';
+$exo-font:'Exo';
+$font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

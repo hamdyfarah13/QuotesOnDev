@@ -4,18 +4,3 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
-@mixin link {
-	color: $color__gr;
-	text-decoration: none;
-
-	&:hover {
-		color: darken($color__gr, 15%);
-	}
-
-	&:visited {
-		text-decoration: none;
-		color: $color__gr;
-	}
-}
